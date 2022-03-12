@@ -1,7 +1,7 @@
 const express = require("express");
 const req = require("express/lib/request");
 const app = express();
-
+let mongoose = require("mongoose");
 if(process.env.NODE_ENV!=="production"){
 require("dotenv").config({path:"backend/config/config.env"})
 }

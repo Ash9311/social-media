@@ -1,5 +1,5 @@
 const post = require("../models/post");
-
+let mongoose = require("mongoose");
 exports.createPost = async(req,res) =>{
     try{
         const newPostData = {
